@@ -49,3 +49,9 @@ Configuration variables:
  - **database_path** (*Required*): _Full_ path to the database which will keep persistent network data.
 
 To add new devices to the network, call the `permit` service on the `zha` domain, and then follow the device instructions for doing a scan or factory reset. In case you want to add Philips Hue bulbs that have previously been added to another bridge, have a look at: [https://github.com/vanviegen/hue-thief/](https://github.com/vanviegen/hue-thief/)
+
+How to add a Zigbee device in the Web UI (AKA call `permit` on the `zha` domain)
+  - Select services icon under developer tools 
+  - From the services drop down scroll to and select "zha.permit"
+  - Select "call services"
+  - Then follow the device instructions for doing a scan or factory reset
